@@ -11,8 +11,8 @@ namespace AZEventGridEventPublish
         {
 
             EventGridPublisherClient publisherClient = new EventGridPublisherClient(
-                new Uri("https://learningegapd.eastus2-1.eventgrid.azure.net/api/events"),
-                new AzureKeyCredential("kPrAIXrnAhuAIydQvPvkWL1a22B+F1ooj1VWHE7C70g="));
+                new Uri("Your EventGrid Topic Endpoint URL"),
+                new AzureKeyCredential("Access Keys"));
 
             for (int i = 0; i < 100; i++)
             {
